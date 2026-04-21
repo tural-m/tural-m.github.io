@@ -5,26 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tural Mansimov — Data Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#07090D;--sf:#0D1117;--sf2:#131A23;--sf3:#1A2332;
-  --bd:#1C2A3A;--bd2:#243448;
-  --ac:#00C8F0;--adim:rgba(0,200,240,.07);--aglow:rgba(0,200,240,.15);
-  --gr:#00E5A0;--or:#FF8C42;--rd:#FF4D6A;--yl:#FFD166;--pu:#A78BFA;
-  --tx:#E2EBF3;--tx2:#6E8899;--tx3:#2E4558;
+  --bg:#07090f;--sf:#0c1018;--sf2:#121821;--sf3:#18202c;
+  --bd:#1d2840;--bd2:#273555;
+  --ac:#6366f1;--adim:rgba(99,102,241,.08);--aglow:rgba(99,102,241,.16);
+  --gr:#22c55e;--or:#f59e0b;--rd:#ef4444;--cy:#06b6d4;--pu:#a78bfa;
+  --tx:#e8eef8;--tx2:#7a8fa8;--tx3:#3a5070;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--tx);font-family:"DM Sans",sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden}
+body{background:var(--bg);color:var(--tx);font-family:"Inter",sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden}
 body::after{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:rgba(7,9,13,.9);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd)}
-.logo{font-family:"Syne",sans-serif;font-weight:800;font-size:17px;color:var(--tx);cursor:pointer;letter-spacing:-.3px}
+.logo{font-family:"Outfit",sans-serif;font-weight:800;font-size:17px;color:var(--tx);cursor:pointer;letter-spacing:-.3px}
 .logo span{color:var(--ac)}
 .nav-links{display:flex;gap:36px;list-style:none}
-.nav-links a{font-family:"DM Mono",monospace;font-size:11px;color:var(--tx2);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:color .2s}
+.nav-links a{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--ac)}
 
 /* PAGES */
@@ -36,35 +36,35 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .wrap{max-width:1120px;margin:0 auto;padding:0 48px}
 .sec{padding:72px 0}
 .sec-head{display:flex;align-items:center;gap:14px;margin-bottom:48px}
-.sec-num{font-family:"DM Mono",monospace;font-size:11px;color:var(--ac);letter-spacing:.12em}
-.sec-title{font-family:"Syne",sans-serif;font-weight:700;font-size:34px;letter-spacing:-1px}
+.sec-num{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ac);letter-spacing:.12em}
+.sec-title{font-family:"Outfit",sans-serif;font-weight:700;font-size:34px;letter-spacing:-1px}
 .sec-line{flex:1;height:1px;background:var(--bd)}
-.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:var(--adim);border:1px solid rgba(0,200,240,.2);font-family:"DM Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.1em;border-radius:3px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:var(--adim);border:1px solid rgba(99,102,241,.2);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.1em;border-radius:3px}
 .chip.gr{background:rgba(0,229,160,.07);border-color:rgba(0,229,160,.25);color:var(--gr)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor;animation:blink 2s ease infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:all .2s;border:none}
-.btn-p{background:var(--ac);color:var(--bg);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
-.btn-p:hover{background:#00E0FF;transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,200,240,.28)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:all .2s;border:none}
+.btn-p{background:var(--ac);color:var(--bg);border-radius:6px}
+.btn-p:hover{background:#818cf8;transform:translateY(-2px);box-shadow:0 8px 28px rgba(99,102,241,.28)}
 .btn-g{background:transparent;color:var(--tx);border:1px solid var(--bd2)}
 .btn-g:hover{border-color:var(--ac);color:var(--ac)}
 
 /* HOME */
 #home{position:relative;overflow:hidden}
-.hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,240,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,240,.025) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 55% at 50% 35%,black 20%,transparent 100%)}
-.hblob{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:500px;height:350px;background:radial-gradient(ellipse,rgba(0,200,240,.055) 0%,transparent 70%);pointer-events:none}
+.hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(99,102,241,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.025) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 55% at 50% 35%,black 20%,transparent 100%)}
+.hblob{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:500px;height:350px;background:radial-gradient(ellipse,rgba(99,102,241,.055) 0%,transparent 70%);pointer-events:none}
 .hi{position:relative;padding:96px 48px 72px;max-width:1120px;margin:0 auto}
 .he{margin-bottom:24px;opacity:0;animation:up .5s .05s ease forwards}
-.hn{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(48px,7vw,90px);line-height:.95;letter-spacing:-3px;margin-bottom:10px;opacity:0;animation:up .5s .12s ease forwards}
-.hn-o{display:block;color:transparent;-webkit-text-stroke:1.5px rgba(0,200,240,.45)}
-.hs{font-family:"DM Mono",monospace;font-size:14px;color:var(--tx2);margin-bottom:28px;opacity:0;animation:up .5s .2s ease forwards}
+.hn{font-family:"Outfit",sans-serif;font-weight:800;font-size:clamp(48px,7vw,90px);line-height:.95;letter-spacing:-3px;margin-bottom:10px;opacity:0;animation:up .5s .12s ease forwards}
+.hn-o{display:block;color:transparent;-webkit-text-stroke:1.5px rgba(99,102,241,.45)}
+.hs{font-family:"JetBrains Mono",monospace;font-size:14px;color:var(--tx2);margin-bottom:28px;opacity:0;animation:up .5s .2s ease forwards}
 .hs span{color:var(--ac);font-style:italic}
 .hd{max-width:520px;font-size:16px;color:var(--tx2);line-height:1.75;margin-bottom:44px;opacity:0;animation:up .5s .28s ease forwards}
 .hc{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:up .5s .36s ease forwards}
 .hst{display:flex;gap:44px;flex-wrap:wrap;margin-top:72px;padding-top:44px;border-top:1px solid var(--bd);opacity:0;animation:up .5s .44s ease forwards}
-.sn{font-family:"Syne",sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px}
+.sn{font-family:"Outfit",sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px}
 .sn span{color:var(--ac)}
-.sl{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.sl{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 
 /* ABOUT */
@@ -74,23 +74,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .hilight{color:var(--ac)}
 .aa{display:flex;flex-direction:column;gap:20px}
 .card{background:var(--sf);border:1px solid var(--bd);padding:22px}
-.ct{font-family:"DM Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.ct{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
 .il{list-style:none;display:flex;flex-direction:column;gap:9px}
 .il li{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--tx2)}
 .il li::before{content:"›";color:var(--ac);font-size:15px;font-weight:700}
 .certlist{list-style:none;display:flex;flex-direction:column;gap:10px}
 .certitem{padding:9px 12px;background:var(--sf2);border-left:2px solid var(--ac);display:flex;flex-direction:column;gap:2px}
 .certname{font-size:12px;color:var(--tx);font-weight:500}
-.certorg{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3)}
+.certorg{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3)}
 .tl{margin-top:44px;display:flex;flex-direction:column}
 .ti{display:grid;grid-template-columns:130px 1px 1fr;gap:0 22px;padding-bottom:32px}
 .ti:last-child{padding-bottom:0}
-.tdate{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);text-align:right;padding-top:3px}
+.tdate{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);text-align:right;padding-top:3px}
 .tline{background:var(--bd);position:relative}
 .tline::before{content:"";position:absolute;top:5px;left:50%;transform:translateX(-50%);width:7px;height:7px;background:var(--ac);border-radius:50%;box-shadow:0 0 10px var(--ac)}
 .tbody{padding-left:8px}
-.trole{font-family:"Syne",sans-serif;font-weight:600;font-size:14px;color:var(--tx);margin-bottom:1px}
-.tcomp{font-family:"DM Mono",monospace;font-size:11px;color:var(--ac);margin-bottom:6px}
+.trole{font-family:"Outfit",sans-serif;font-weight:600;font-size:14px;color:var(--tx);margin-bottom:1px}
+.tcomp{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ac);margin-bottom:6px}
 .tdesc{font-size:13px;color:var(--tx2);line-height:1.55}
 
 /* SKILLS */
@@ -98,10 +98,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .sc{background:var(--sf);border:1px solid var(--bd);padding:24px;position:relative;overflow:hidden;transition:border-color .3s}
 .sc::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ac),transparent)}
 .sc:hover{border-color:var(--bd2)}
-.sct{font-family:"DM Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.sct{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
 .stags{display:flex;flex-wrap:wrap;gap:7px}
-.stag{padding:4px 9px;background:var(--sf2);border:1px solid var(--bd);font-family:"DM Mono",monospace;font-size:10px;color:var(--tx2);transition:all .2s;cursor:default}
-.stag:hover,.stag.hl{border-color:rgba(0,200,240,.35);color:var(--ac);background:var(--adim)}
+.stag{padding:4px 9px;background:var(--sf2);border:1px solid var(--bd);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx2);transition:all .2s;cursor:default}
+.stag:hover,.stag.hl{border-color:rgba(99,102,241,.35);color:var(--ac);background:var(--adim)}
 
 /* PROJECTS LIST */
 .pg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -110,15 +110,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .pc:hover{border-color:var(--bd2);transform:translateY(-4px);box-shadow:0 18px 52px rgba(0,0,0,.4)}
 .pc:hover::after{opacity:1}
 .pi{padding:28px;position:relative;z-index:1}
-.pnum{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);margin-bottom:14px}
-.ptitle{font-family:"Syne",sans-serif;font-weight:700;font-size:18px;color:var(--tx);letter-spacing:-.4px;margin-bottom:10px;line-height:1.2}
+.pnum{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);margin-bottom:14px}
+.ptitle{font-family:"Outfit",sans-serif;font-weight:700;font-size:18px;color:var(--tx);letter-spacing:-.4px;margin-bottom:10px;line-height:1.2}
 .pdesc{font-size:13px;color:var(--tx2);line-height:1.6;margin-bottom:20px}
 .ptags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:24px}
-.ptag{padding:3px 7px;background:var(--sf2);border:1px solid var(--bd);font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);letter-spacing:.04em}
+.ptag{padding:3px 7px;background:var(--sf2);border:1px solid var(--bd);font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);letter-spacing:.04em}
 .pfoot{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid var(--bd)}
 .pkpis{display:flex;gap:18px}
-.kpiv{font-family:"Syne",sans-serif;font-weight:700;font-size:17px;color:var(--ac);letter-spacing:-.4px}
-.kpil{font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
+.kpiv{font-family:"Outfit",sans-serif;font-weight:700;font-size:17px;color:var(--ac);letter-spacing:-.4px}
+.kpil{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
 .parrow{width:32px;height:32px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;color:var(--tx2);font-size:15px;transition:all .2s}
 .pc:hover .parrow{border-color:var(--ac);color:var(--ac);background:var(--adim)}
 
@@ -126,32 +126,32 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 #project-detail{display:none}
 #project-detail.active{display:block}
 .dtop{max-width:1120px;margin:0 auto;padding:44px 48px 0}
-.bkbtn{display:inline-flex;align-items:center;gap:8px;font-family:"DM Mono",monospace;font-size:11px;color:var(--tx2);cursor:pointer;background:none;border:none;margin-bottom:36px;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.bkbtn{display:inline-flex;align-items:center;gap:8px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);cursor:pointer;background:none;border:none;margin-bottom:36px;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
 .bkbtn:hover{color:var(--ac)}
 .dhero{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:start;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--bd)}
-.dtitle{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(28px,3.5vw,46px);letter-spacing:-1.5px;line-height:1;margin-bottom:12px}
+.dtitle{font-family:"Outfit",sans-serif;font-weight:800;font-size:clamp(28px,3.5vw,46px);letter-spacing:-1.5px;line-height:1;margin-bottom:12px}
 .dsub{font-size:15px;color:var(--tx2);line-height:1.7;max-width:580px}
 .dmeta{display:flex;flex-direction:column;gap:6px;min-width:210px}
 .mrow{display:flex;justify-content:space-between;align-items:baseline;padding:9px 13px;background:var(--sf);border:1px solid var(--bd);gap:12px}
-.mlbl{font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
-.mval{font-family:"DM Mono",monospace;font-size:12px;color:var(--ac)}
+.mlbl{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
+.mval{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ac)}
 
 /* ═══ PROJECT BODY ═══ */
 .pbody{max-width:1120px;margin:0 auto;padding:0 48px 72px}
 .psec{margin-bottom:52px}
-.psec-label{font-family:"DM Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.psec-label{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .psec-label::after{content:"";flex:1;height:1px;background:var(--bd)}
 
 /* VIDEO */
 .video-box{background:var(--sf);border:1px solid var(--bd);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden}
-.video-box::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,200,240,.04) 0%,transparent 70%)}
+.video-box::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(99,102,241,.04) 0%,transparent 70%)}
 .vid-ring{width:80px;height:80px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
-.vid-ring::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(0,200,240,.3);animation:ripple 2s ease infinite}
+.vid-ring::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(99,102,241,.3);animation:ripple 2s ease infinite}
 @keyframes ripple{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.4);opacity:0}}
 .vid-ring svg{width:30px;height:30px;fill:var(--bg);margin-left:5px}
-.vid-title{font-family:"Syne",sans-serif;font-weight:700;font-size:20px;color:var(--tx);position:relative;z-index:1}
-.vid-note{font-family:"DM Mono",monospace;font-size:11px;color:var(--tx2);text-align:center;max-width:400px;line-height:1.6;position:relative;z-index:1}
-.vid-upload{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px dashed var(--bd2);font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);cursor:pointer;transition:all .2s;position:relative;z-index:1;background:transparent}
+.vid-title{font-family:"Outfit",sans-serif;font-weight:700;font-size:20px;color:var(--tx);position:relative;z-index:1}
+.vid-note{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);text-align:center;max-width:400px;line-height:1.6;position:relative;z-index:1}
+.vid-upload{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px dashed var(--bd2);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);cursor:pointer;transition:all .2s;position:relative;z-index:1;background:transparent}
 .vid-upload:hover{border-color:var(--ac);color:var(--ac)}
 .vid-upload input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
 #video-player{display:none;width:100%;border:1px solid var(--bd)}
@@ -159,15 +159,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 
 /* SCREENSHOTS */
 .pages-nav{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
-.page-tab{padding:7px 14px;background:transparent;border:1px solid var(--bd);font-family:"DM Mono",monospace;font-size:10px;color:var(--tx2);cursor:pointer;transition:all .18s;white-space:nowrap}
+.page-tab{padding:7px 14px;background:transparent;border:1px solid var(--bd);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx2);cursor:pointer;transition:all .18s;white-space:nowrap}
 .page-tab:hover{border-color:var(--ac);color:var(--ac)}
 .page-tab.active{background:var(--ac);border-color:var(--ac);color:var(--bg)}
 .screenshot-viewer{position:relative;border:1px solid var(--bd);overflow:hidden;background:var(--sf2)}
 .screenshot-viewer img{width:100%;display:block;transition:opacity .25s;cursor:zoom-in}
 .screenshot-viewer img:hover{opacity:.95}
 .screenshot-caption{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:var(--sf);border-top:1px solid var(--bd)}
-.caption-text{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx2);letter-spacing:.06em}
-.caption-badge{padding:3px 9px;background:var(--adim);border:1px solid rgba(0,200,240,.2);font-family:"DM Mono",monospace;font-size:9px;color:var(--ac);letter-spacing:.08em}
+.caption-text{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx2);letter-spacing:.06em}
+.caption-badge{padding:3px 9px;background:var(--adim);border:1px solid rgba(99,102,241,.2);font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--ac);letter-spacing:.08em}
 .thumb-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
 .thumb{border:1px solid var(--bd);overflow:hidden;cursor:pointer;transition:all .2s;opacity:.55}
 .thumb:hover,.thumb.active{border-color:var(--ac);opacity:1}
@@ -178,7 +178,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .lightbox.open{display:flex}
 .lb-inner{position:relative;max-width:95vw;max-height:92vh}
 .lb-inner img{max-width:100%;max-height:90vh;display:block;border:1px solid var(--bd)}
-.lb-close{position:absolute;top:-36px;right:0;font-family:"DM Mono",monospace;font-size:11px;color:var(--tx2);cursor:pointer;background:none;border:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
+.lb-close{position:absolute;top:-36px;right:0;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);cursor:pointer;background:none;border:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
 .lb-close:hover{color:var(--ac)}
 
 /* DOWNLOAD */
@@ -186,22 +186,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 .dl-card:hover{border-color:var(--bd2)}
 .dl-left{display:flex;align-items:center;gap:20px}
 .dl-icon{width:56px;height:56px;background:var(--sf2);border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
-.dl-fname{font-family:"Syne",sans-serif;font-weight:700;font-size:17px;color:var(--tx);letter-spacing:-.3px;margin-bottom:4px}
-.dl-meta{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx2);letter-spacing:.06em;line-height:1.7}
+.dl-fname{font-family:"Outfit",sans-serif;font-weight:700;font-size:17px;color:var(--tx);letter-spacing:-.3px;margin-bottom:4px}
+.dl-meta{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx2);letter-spacing:.06em;line-height:1.7}
 .dl-meta span{color:var(--ac)}
 .dl-right{display:flex;flex-direction:column;gap:10px;align-items:flex-end;flex-shrink:0}
-.dl-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap;border:none;cursor:pointer}
-.dl-btn.primary{background:var(--ac);color:var(--bg);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
-.dl-btn.primary:hover{background:#00E0FF;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,200,240,.3)}
+.dl-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap;border:none;cursor:pointer}
+.dl-btn.primary{background:var(--ac);color:var(--bg);border-radius:6px}
+.dl-btn.primary:hover{background:#818cf8;transform:translateY(-1px);box-shadow:0 6px 20px rgba(99,102,241,.3)}
 .dl-btn.ghost{background:transparent;color:var(--tx2);border:1px solid var(--bd2)}
 .dl-btn.ghost:hover{border-color:var(--ac);color:var(--ac)}
-.dl-note{font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);text-align:right;max-width:200px;line-height:1.5}
+.dl-note{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);text-align:right;max-width:200px;line-height:1.5}
 
 /* FINDINGS */
 .findings-grid{display:grid;grid-template-columns:1fr 280px;gap:40px}
 .fl{display:flex;flex-direction:column;gap:9px}
 .fi{display:flex;gap:12px;padding:12px 14px;background:var(--sf);border:1px solid var(--bd);border-left:2px solid var(--ac)}
-.fn{font-family:"DM Mono",monospace;font-size:10px;color:var(--ac);min-width:18px}
+.fn{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ac);min-width:18px}
 .ft{font-size:13px;color:var(--tx2);line-height:1.5}
 .techlist{display:flex;flex-direction:column;gap:7px}
 .techitem{display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--sf);border:1px solid var(--bd);font-size:13px;color:var(--tx2)}
@@ -209,27 +209,27 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;ali
 
 /* CONTACT */
 .cg{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-.ch{font-family:"Syne",sans-serif;font-weight:700;font-size:26px;letter-spacing:-.8px;line-height:1.2;margin-bottom:18px}
+.ch{font-family:"Outfit",sans-serif;font-weight:700;font-size:26px;letter-spacing:-.8px;line-height:1.2;margin-bottom:18px}
 .ch span{color:var(--ac)}
 .cp{font-size:14px;color:var(--tx2);line-height:1.75;margin-bottom:32px}
 .clinks{display:flex;flex-direction:column;gap:10px}
 .clink{display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--sf);border:1px solid var(--bd);text-decoration:none;transition:all .22s}
 .clink:hover{border-color:var(--ac);background:var(--adim);transform:translateX(4px)}
 .cicon{width:32px;height:32px;background:var(--sf2);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.cplat{font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
+.cplat{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em}
 .chandle{font-size:13px;color:var(--tx)}
 .clink:hover .chandle{color:var(--ac)}
 .cfm{display:flex;flex-direction:column;gap:14px}
-.cflbl{font-family:"DM Mono",monospace;font-size:9px;color:var(--tx3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
-.cfin,.cftxt{background:var(--sf);border:1px solid var(--bd);color:var(--tx);padding:11px 14px;font-family:"DM Sans",sans-serif;font-size:13px;outline:none;transition:border-color .2s;width:100%;resize:none}
+.cflbl{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--tx3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.cfin,.cftxt{background:var(--sf);border:1px solid var(--bd);color:var(--tx);padding:11px 14px;font-family:"Inter",sans-serif;font-size:13px;outline:none;transition:border-color .2s;width:100%;resize:none}
 .cfin:focus,.cftxt:focus{border-color:var(--ac)}
 .cftxt{height:130px}
 
 /* FOOTER */
 footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-content:space-between;align-items:center}
-.footl{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);letter-spacing:.06em}
+.footl{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);letter-spacing:.06em}
 .footlinks{display:flex;gap:22px}
-.footlinks a{font-family:"DM Mono",monospace;font-size:10px;color:var(--tx3);text-decoration:none;letter-spacing:.06em;transition:color .2s}
+.footlinks a{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);text-decoration:none;letter-spacing:.06em;transition:color .2s}
 .footlinks a:hover{color:var(--ac)}
 
 @media(max-width:768px){
@@ -268,7 +268,7 @@ footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-con
       <a class="btn btn-g" onclick="showPage('contact')">Get in Touch</a>
     </div>
     <div class="hst">
-      <div><div class="sn">5<span>+</span></div><div class="sl">Portfolio Projects</div></div>
+      <div><div class="sn">7<span>+</span></div><div class="sl">Portfolio Projects</div></div>
       <div><div class="sn">3<span>×</span></div><div class="sl">Salesforce Certified</div></div>
       <div><div class="sn">8<span>+</span></div><div class="sl">Years Experience</div></div>
       <div><div class="sn">AI<span>↗</span></div><div class="sl">Augmented Analytics</div></div>
@@ -283,22 +283,21 @@ footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-con
     <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">About</h2><div class="sec-line"></div></div>
     <div class="ag">
       <div class="at">
-        <p><span class="hilight">Hey —</span> I'm Tural, a Data Analyst based in <strong>Victoria, BC</strong>. I build end-to-end analytics solutions: from data modelling in Snowflake to executive dashboards in Power BI.</p>
-        <p>My background spans banking, government, enterprise SaaS, and my own business. At the Bank of Azerbaijan I was promoted to <strong>Head of Reporting</strong> within two years. At Arc'teryx I built Salesforce systems at enterprise scale. I also founded and sold a 10-person business with full ROI in 18 months.</p>
-        <p>I'm currently focused on <strong>AI-augmented analytics</strong>. My HR Analytics project was built with Claude AI connected live to Power BI Desktop via VS Code and the MCP server extension — reading the schema, generating DAX, building dim_date, and auto-documenting the model.</p>
+        <p>I turn raw data into decisions. My stack: <strong>Snowflake</strong> for data modelling and Medallion Architecture, <strong>Power BI and Tableau</strong> for executive dashboards, <strong>SQL and Python</strong> for pipelines, and <strong>Claude AI connected live via MCP</strong> for AI-augmented analytics. End-to-end, no handoffs.</p>
+        <p>Across 7 portfolio projects I've processed <strong>2.45M scooter trips</strong>, <strong>48,890 patient records</strong>, <strong>27,364 insurance policies</strong>, and <strong>1,000 AI-scored support tickets</strong>. I've built star schemas, Medallion pipelines, 25-measure DAX models, and a live Salesforce-to-Power BI API connection — all documented on GitHub.</p>
+        <p>Prior roles: <strong>Head of Reporting</strong> at the Bank of Azerbaijan, <strong>Reporting Manager</strong> at Azerbaijan's Ministry of Economy where I calculated the national inflation rate, and <strong>Salesforce Developer</strong> at Arc'teryx building and maintaining automation processes from data input to reporting and dashboards. Each role was fundamentally about data accuracy, pipeline reliability, and reporting that stakeholders trusted.</p>
         <p>Open to <strong>Data Analyst, Analytics Engineer, or BI Developer</strong> roles in Victoria or remote across Canada.</p>
-        <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:19px;margin:36px 0 18px;letter-spacing:-.4px">Experience</h3>
+        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:19px;margin:36px 0 18px;letter-spacing:-.4px">Experience</h3>
         <div class="tl">
-          <div class="ti"><div class="tdate">Oct 2023–Jan 2025</div><div class="tline"></div><div class="tbody"><div class="trole">Salesforce Developer</div><div class="tcomp">Arc'teryx · Remote, Vancouver</div><div class="tdesc">Enterprise Salesforce — Apex, LWC, Flow, and data integrations at scale.</div></div></div>
-          <div class="ti"><div class="tdate">2021–2023</div><div class="tline"></div><div class="tbody"><div class="trole">Head of Reporting</div><div class="tcomp">Bank of Azerbaijan</div><div class="tdesc">Built executive reporting infrastructure. Promoted to department head within 2 years.</div></div></div>
-          <div class="ti"><div class="tdate">2019–2021</div><div class="tline"></div><div class="tbody"><div class="trole">Reporting Manager</div><div class="tcomp">Ministry of Economy, Azerbaijan</div><div class="tdesc">Calculated national inflation rate and government budget forecasting.</div></div></div>
-          <div class="ti"><div class="tdate">2017–2019</div><div class="tline"></div><div class="tbody"><div class="trole">Founder</div><div class="tcomp">Le Caramel Pastry</div><div class="tdesc">Scaled to 10 employees, full ROI in 18 months, sold the business.</div></div></div>
+          <div class="ti"><div class="tdate">Oct 2023–Jan 2025</div><div class="tline"></div><div class="tbody"><div class="trole">Salesforce Developer</div><div class="tcomp">Arc'teryx · Remote, Vancouver</div><div class="tdesc">Built and maintained automation processes from data input to reporting and dashboards across three Salesforce portals.</div></div></div>
+          <div class="ti"><div class="tdate">2013–2015</div><div class="tline"></div><div class="tbody"><div class="trole">Head of Reporting</div><div class="tcomp">Bank of Azerbaijan</div><div class="tdesc">Designed daily, weekly, and annual performance reports for senior management and regulatory bodies. Promoted to department head within 2 years.</div></div></div>
+          <div class="ti"><div class="tdate">2010–2013</div><div class="tline"></div><div class="tbody"><div class="trole">Reporting Manager</div><div class="tcomp">Ministry of Economy, Azerbaijan</div><div class="tdesc">Analyzed consumer market price data to calculate the national inflation rate using statistical algorithms, supporting government budget planning.</div></div></div>
         </div>
       </div>
       <div class="aa">
-        <div class="card"><div class="ct">Quick Info</div><ul class="il"><li>Victoria, BC (open to remote)</li><li>Data Analyst · BI Developer</li><li>mansimovtural@gmail.com</li><li>Data Analytics Cert. Feb 2026</li></ul></div>
-        <div class="card"><div class="ct">Certifications</div><ul class="certlist"><li class="certitem"><span class="certname">Platform Administrator</span><span class="certorg">Salesforce ADM-201</span></li><li class="certitem"><span class="certname">Platform Developer</span><span class="certorg">Salesforce Certified</span></li><li class="certitem"><span class="certname">Data Cloud Consultant</span><span class="certorg">Salesforce Certified</span></li><li class="certitem"><span class="certname">Data Analytics</span><span class="certorg">Legion IT Academy · Feb 2026</span></li></ul></div>
-        <div class="card"><div class="ct">Target Roles</div><ul class="il"><li>Data Analyst</li><li>Analytics Engineer</li><li>BI Developer</li><li>Data Consultant</li></ul></div>
+        <div class="card"><div class="ct">Quick Info</div><ul class="il"><li>Victoria, BC (open to remote)</li><li>Data Analyst · BI Developer</li><li>mansimovtural@gmail.com</li><li>Certificate, Data Analytics · Feb 2026</li></ul></div>
+
+        <div class="card"><div class="ct">Target Roles</div><ul class="il"><li>Data Analyst</li><li>Analytics Engineer</li><li>BI Developer</li></ul></div>
       </div>
     </div>
   </div>
@@ -331,6 +330,8 @@ footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-con
       <div class="pc" onclick="showProject('supply')"><div class="pi"><div class="pnum">PROJECT / 03</div><h3 class="ptitle">Supply Chain Analytics</h3><p class="pdesc">Full Medallion Architecture (Bronze→Silver→Gold) in Snowflake with 6-page executive Power BI dashboard.</p><div class="ptags"><span class="ptag">Snowflake</span><span class="ptag">Medallion</span><span class="ptag">Power BI</span><span class="ptag">SQL</span></div><div class="pfoot"><div class="pkpis"><div><div class="kpiv">3</div><div class="kpil">Layers</div></div><div><div class="kpiv">6</div><div class="kpil">Pages</div></div></div><div class="parrow">↗</div></div></div></div>
       <div class="pc" onclick="showProject('healthcare')"><div class="pi"><div class="pnum">PROJECT / 04</div><h3 class="ptitle">Healthcare Analytics Dashboard</h3><p class="pdesc">48,890 patient records, $97M billed. Star schema with 6-page Power BI dashboard covering admissions, billing, and outcomes.</p><div class="ptags"><span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">Star Schema</span><span class="ptag">SQL</span></div><div class="pfoot"><div class="pkpis"><div><div class="kpiv">48.9K</div><div class="kpil">Patients</div></div><div><div class="kpiv">$97M</div><div class="kpil">Billed</div></div></div><div class="parrow">↗</div></div></div></div>
       <div class="pc" onclick="showProject('sales')"><div class="pi"><div class="pnum">PROJECT / 05</div><h3 class="ptitle">Sales Analytics · Salesforce → Power BI</h3><p class="pdesc">Live Salesforce API connection to Power BI with conversion funnel, revenue visuals, and pipeline health.</p><div class="ptags"><span class="ptag">Salesforce</span><span class="ptag">Power BI</span><span class="ptag">Live API</span><span class="ptag">DAX</span></div><div class="pfoot"><div class="pkpis"><div><div class="kpiv">Live</div><div class="kpil">Connection</div></div><div><div class="kpiv">CRM</div><div class="kpil">Source</div></div></div><div class="parrow">↗</div></div></div></div>
+      <div class="pc" onclick="showProject('insurance')"><div class="pi"><div class="pnum">PROJECT / 06</div><h3 class="ptitle">Insurance Analytics</h3><p class="pdesc">End-to-end pipeline on 27,364 auto insurance policies ($40.6M premium). Decomposed Loss Ratio into Frequency × Severity — surfaced a 37-point gap invisible to single-variable analysis.</p><div class="ptags"><span class="ptag">Python</span><span class="ptag">Snowflake</span><span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">Medallion</span></div><div class="pfoot"><div class="pkpis"><div><div class="kpiv">27.4K</div><div class="kpil">Policies</div></div><div><div class="kpiv">$40.6M</div><div class="kpil">Premium</div></div><div><div class="kpiv">6</div><div class="kpil">Pages</div></div></div><div class="parrow">↗</div></div></div></div>
+      <div class="pc" onclick="showProject('mobility')"><div class="pi"><div class="pnum">PROJECT / 07</div><h3 class="ptitle">Micromobility Revenue Intelligence</h3><p class="pdesc">Full Medallion Architecture on 2.45M scooter trips. Central Austin generates 75% of trips at below-average revenue ($7.78 vs $8.70 network average) — modelled surge pricing as the fix.</p><div class="ptags"><span class="ptag">Snowflake</span><span class="ptag">SQL</span><span class="ptag">Tableau</span><span class="ptag">Medallion</span></div><div class="pfoot"><div class="pkpis"><div><div class="kpiv">2.45M</div><div class="kpil">Trips</div></div><div><div class="kpiv">75%</div><div class="kpil">Central ATX</div></div><div><div class="kpiv">5</div><div class="kpil">Pages</div></div></div><div class="parrow">↗</div></div></div></div>
     </div>
   </div>
   <footer><span class="footl">© 2026 Tural Mansimov</span><div class="footlinks"><a href="https://linkedin.com/in/tural-m" target="_blank">LinkedIn</a><a href="https://github.com/tural-m" target="_blank">GitHub</a></div></footer>
@@ -408,7 +409,7 @@ footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-con
       <div class="psec-label">Key Findings & Stack</div>
       <div class="findings-grid">
         <div><div class="fl" id="d-findings"></div></div>
-        <div><div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px">Tech Stack</div><div class="techlist" id="d-tech"></div></div>
+        <div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ac);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px">Tech Stack</div><div class="techlist" id="d-tech"></div></div>
       </div>
     </div>
 
@@ -530,6 +531,24 @@ const PROJECTS = {
     findings:["Live Salesforce API — no manual exports needed","Win rate 31.4% vs 27% industry benchmark","Top 20% of reps generated 58% of revenue — concentration risk","Enterprise deals: 2.4× longer cycle but 3.1× higher close rate","Proposal stage identified as key drop-off point"],
     tech:["Salesforce (Live API)","SOQL","Power BI","DAX","Power Query","Direct Query"],
     hasScreenshots:false
+  },
+  insurance:{
+    title:"Insurance Analytics",
+    sub:"End-to-end pipeline on 27,364 auto insurance policies ($40.6M premium). Decomposed Loss Ratio into Frequency × Severity — surfaced a 37-point gap invisible to single-variable analysis. Medallion Architecture in Snowflake, 6-page Power BI dashboard.",
+    meta:[{l:"Policies",v:"27,364"},{l:"Premium",v:"$40.6M"},{l:"Platform",v:"Snowflake + Power BI"},{l:"Pages",v:"6"},{l:"Model",v:"Medallion"}],
+    findings:["27,364 auto insurance policies totalling $40.6M in written premium","Loss Ratio decomposed into Frequency × Severity — revealed a 37-point gap invisible to single-variable analysis","Medallion Architecture in Snowflake: Bronze → Silver → Gold","6-page Power BI dashboard covering premium, claims, loss ratio, and segment breakdowns","Python used for data generation and end-to-end pipeline ingestion"],
+    tech:["Python","Snowflake","Medallion Architecture","SQL (ETL/ELT)","Power BI","DAX","Power Query"],
+    hasScreenshots:false,
+    github:"https://github.com/tural-m/insurance_analytics"
+  },
+  mobility:{
+    title:"Micromobility Revenue Intelligence",
+    sub:"Full Medallion Architecture on 2.45M scooter trips. Central Austin generates 75% of trips at below-average revenue ($7.78 vs $8.70 network average) — modelled surge pricing as the fix. 5-page Tableau Public dashboard.",
+    meta:[{l:"Trips",v:"2.45M"},{l:"Platform",v:"Snowflake + Tableau"},{l:"Pages",v:"5"},{l:"Domain",v:"Urban Mobility"}],
+    findings:["2.45M scooter trips analysed across Austin's micromobility network","Central Austin generates 75% of all trips but at below-average revenue ($7.78 vs $8.70 network average)","Surge pricing model projected to recover $1.2M annually in under-monetised high-demand zones","Medallion Architecture in Snowflake: Bronze → Silver → Gold","5-page Tableau Public dashboard with geographic and time-series analysis"],
+    tech:["Snowflake","Medallion Architecture","SQL","Tableau","Geographic Analysis","Time-Series"],
+    hasScreenshots:false,
+    github:"https://github.com/tural-m/micromobility-revenue-intelligence"
   }
 };
 
@@ -551,7 +570,7 @@ function showProject(key){
   document.getElementById('d-sub').textContent=p.sub;
   document.getElementById('d-meta').innerHTML=
     p.meta.map(m=>`<div class="mrow"><span class="mlbl">${m.l}</span><span class="mval">${m.v}</span></div>`).join('')+
-    `<a href="https://github.com/tural-m" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:9px 13px;background:var(--sf);border:1px solid var(--bd2);text-decoration:none;font-family:'DM Mono',monospace;font-size:10px;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;transition:all .2s;margin-top:2px" onmouseover="this.style.background='var(--adim)'" onmouseout="this.style.background='var(--sf)'">⌥ GitHub ↗</a>`;
+    `<a href="${p.github||'https://github.com/tural-m'}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:9px 13px;background:var(--sf);border:1px solid var(--bd2);text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;transition:all .2s;margin-top:2px" onmouseover="this.style.background='var(--adim)'" onmouseout="this.style.background='var(--sf)'">⌥ GitHub ↗</a>`;
 
   // Screenshots
   const ssSection=document.getElementById('screenshots-section');
@@ -627,8 +646,8 @@ function loadVideo(input){
 function handleForm(e){
   e.preventDefault();
   const b=document.getElementById('fbtn');
-  b.textContent='Message Sent ✓';b.style.background='var(--gr)';b.style.clipPath='none';
-  setTimeout(()=>{b.textContent='Send Message →';b.style.background='';b.style.clipPath='';e.target.reset();},3500);
+  b.textContent='Message Sent ✓';b.style.background='var(--gr)';b.style.borderRadius='6px';
+  setTimeout(()=>{b.textContent='Send Message →';b.style.background='';b.style.borderRadius='';e.target.reset();},3500);
 }
 </script>
 </body>
