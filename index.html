@@ -351,22 +351,17 @@ footer{border-top:1px solid var(--bd);padding:28px 48px;display:flex;justify-con
 
     <!-- VIDEO SECTION -->
     <div class="psec" id="video-section">
-      <div class="psec-label">Demo Recording</div>
-      <div id="video-placeholder" class="video-box">
-        <div class="vid-ring">
-          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-        </div>
+        <div class="psec-label">Demo Recording</div>
         <div class="vid-title">AI Augmentation Demo — 7 min</div>
-        <div class="vid-note">Watch Claude AI connect live to the Power BI file, generate dim_date, build the data dictionary, and create the GitHub README — all in one session.</div>
-        <label class="vid-upload">
-          ↑ Upload your video file to embed it here
-          <input type="file" accept="video/*" onchange="loadVideo(this)">
-        </label>
+        <div class="vid-note">Watch Claude AI connect live to the Power BI file, generate dim_date, build the data
+          dictionary, and create the GitHub README — all in one session.</div>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:1rem;">
+          <iframe src="https://www.youtube.com/embed/f_PxauQ-Py8"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:8px;"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
-      <div id="video-player">
-        <video controls id="vid-el"></video>
-      </div>
-    </div>
 
     <!-- SCREENSHOTS SECTION -->
     <div class="psec" id="screenshots-section" style="display:none">
